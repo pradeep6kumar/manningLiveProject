@@ -61,6 +61,11 @@ class BinaryNode:
         if self.right_value:
             self.right_value.pre_order(v)
 
+    def find_node(self, value_to_find):
+        v = []
+        self.pre_order(v)
+        return f'Found {value_to_find}' if value_to_find in v else f'Value {value_to_find} not found'
+
     def __str__(self):
         nodes = []
         nodes_with_levels = {}

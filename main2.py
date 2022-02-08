@@ -30,7 +30,15 @@ i2 = f2.add_child('i')
 
 if __name__ == '__main__':
     print(root)
+    print('Finding Nodes in Binary Tree')
+    print(root.find_node('E'))
+    print(c.find_node('E'))
     print("======Printing Nary Node=====")
     print('')
     print(root2)
+    print('Finding Nodes in Nary Tree')
+    print(a2.find_node('e'))
+    print(a2.find_node('f'))
+    print(root2.find_node('f'))
+
 
