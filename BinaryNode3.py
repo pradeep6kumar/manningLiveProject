@@ -66,7 +66,7 @@ class BinaryNode:
         v.append(self.values())
 
     def traverse_breadth_first(self):
-        v = []
+        v = {}
         self._level_order(v)
         return v
 
